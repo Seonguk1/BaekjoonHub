@@ -23,6 +23,7 @@ int main(){
 	qsort(arr, n, 51, compare);
 	
 	for(int i=0;i<n;i++){
+	// set 사용 대신 정렬된 상태에서 전 값과 비교하여 중복 제거
         if(strcmp(arr[i],arr[i-1]) == 0) continue;
 		printf("%s\n", arr[i]);
 	}
