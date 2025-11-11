@@ -2,7 +2,10 @@
 #include <stdlib.h>
 
 int cmp(const void* a, const void*b){
-    return *(int*)a > * (int*)b ? 1 : (*(int*)a < *(int*)b ? -1 : 0);
+    int* i = (int*)a;
+    int* j = (int*)b;
+    if(*i >= *j) return 1;
+    return 0;
 }
 
 int main(){
