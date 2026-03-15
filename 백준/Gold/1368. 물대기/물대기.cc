@@ -1,4 +1,8 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <utility>
+#include <functional>
+#include <queue>
 using namespace std;
 int N, W;
 bool visited[301];
